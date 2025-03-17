@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Not Like Tim Countdown</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="mobile.css" />
+  <link rel="icon" type="image/x-icon" href="icon.png">
+</head>
+<body>
+
+  <button id="theme-toggle" style="
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  z-index: 1000;
+">Light Mode</button>
+
+
+  <div class="countdown">
+    <h1>The End Of Timmy</h1>
+    <div class="song">🎵 Song: Not Like Tim 🎵</div>
+    <div class="time">
+      <div><span id="days">00</span><div class="label">Days</div></div>
+      <div><span id="hours">00</span><div class="label">Hours</div></div>
+      <div><span id="minutes">00</span><div class="label">Minutes</div></div>
+      <div><span id="seconds">00</span><div class="label">Seconds</div></div>
+    </div>
+  </div>
+
+  <!-- Audio player hidden in modal -->
+  <div id="timmyModal" class="modal">
+    <div class="modal-content">
+      <h2>🎉 Timmy Time! 🎉</h2>
+      <p>Now Playing: Not Like Tim</p>
+      <audio id="timmySong" src="test.mp3" loop></audio>
+      <div class="audio-controls">
+        <button id="playPauseBtn">Play</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

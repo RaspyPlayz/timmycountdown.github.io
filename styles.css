@@ -1,0 +1,237 @@
+body {
+  background-color: #1a1a1a;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  transition: background-color 0.5s ease;
+}
+
+/* Countdown Box */
+.countdown {
+  text-align: center;
+  background: #333;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  animation: fadeIn 1s ease-out;
+}
+
+/* Heading Styles */
+.countdown h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  animation: bounceIn 1s ease;
+}
+
+.song {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #1e90ff; /* Blue color */
+  opacity: 0;
+  animation: fadeIn 2s ease-in 1s forwards;
+}
+
+/* Time Styling */
+.time {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  animation: fadeIn 2s ease-in 1s forwards;
+}
+
+.time div {
+  background: #444;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 70px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.time div:hover {
+  background-color: #1e90ff; /* Blue hover effect */
+  transform: scale(1.1);
+}
+
+.time div span {
+  display: block;
+  font-size: 2rem;
+}
+
+/* Label Styling */
+.label {
+  font-size: 0.8rem;
+  margin-top: 5px;
+  color: #bbb;
+}
+
+/* Modal styles */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 1.5s ease-in;
+}
+
+.modal-content {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 10px;
+  color: white;
+  text-align: center;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  transform: translateY(-20px);
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+/* Custom Audio Controls */
+.audio-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Play/Pause Button Styling */
+.audio-controls button {
+  background-color: #1e90ff; /* Blue color */
+  color: white;
+  font-size: 1.5rem;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  outline: none;
+}
+
+.audio-controls button:hover {
+  background-color: #4682b4; /* Darker blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
+}
+
+.audio-controls button:focus {
+  outline: none;
+  box-shadow: 0 0 15px rgba(30, 144, 255, 0.8); /* Blue glow effect on focus */
+}
+
+/* Smooth Modal Appearance */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Sliding effect for modal */
+@keyframes slideUp {
+  0% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Time Box Hover Animation */
+@keyframes bounceIn {
+  0% {
+    transform: scale(0);
+  }
+  60% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+  .audio-controls button {
+    font-size: 1.2rem;
+    padding: 10px 25px;
+  }
+
+  .modal-content {
+    width: 90%;
+  }
+
+  .countdown {
+    padding: 20px;
+  }
+}
+
+
+html {
+  user-select: none;
+}
+
+body.light-mode {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.light-mode .countdown {
+  background: #fff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .countdown h1 {
+  color: #000;
+}
+
+.light-mode .song {
+  color: #1e90ff;
+}
+
+.light-mode .time div {
+  background: #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .time div:hover {
+  background-color: #1e90ff;
+}
+
+.light-mode .label {
+  color: #555;
+}
+
+.light-mode .modal-content {
+  background-color: #fff;
+  color: #000;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.light-mode .audio-controls button {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.light-mode .audio-controls button:hover {
+  background-color: #4682b4;
+  box-shadow: 0 0 10px rgba(30, 144, 255, 0.5);
+}
+
+

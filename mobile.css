@@ -1,0 +1,110 @@
+/* General Mobile Responsiveness */
+@media screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    /* Countdown Box */
+    .countdown {
+      padding: 20px;
+      width: 90%;
+    }
+  
+    /* Heading Styles */
+    .countdown h1 {
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
+  
+    /* Song Text */
+    .song {
+      font-size: 1rem;
+      margin-bottom: 15px;
+    }
+  
+    /* Time Styling */
+    .time {
+      flex-direction: column; /* Stack the time boxes vertically */
+      gap: 15px;
+    }
+  
+    .time div {
+      min-width: 100px; /* Make the time boxes wider on mobile */
+      padding: 15px;
+    }
+  
+    .time div span {
+      font-size: 1.5rem; /* Adjust font size for time */
+    }
+  
+    .label {
+      font-size: 0.7rem;
+    }
+  
+    /* Modal Styles */
+    .modal-content {
+      width: 95%; /* Make modal content take up most of the screen */
+      padding: 15px;
+    }
+  
+    /* Audio Controls */
+    .audio-controls {
+      flex-direction: column; /* Stack the buttons vertically */
+      gap: 15px;
+    }
+  
+    /* Play/Pause Button Styling */
+    .audio-controls button {
+      font-size: 1.2rem;
+      padding: 10px 25px;
+    }
+  }
+  
+  /* Larger mobile screens (e.g., for tablets in portrait mode) */
+  @media screen and (max-width: 768px) {
+    body {
+      font-size: 16px;
+    }
+  
+    /* Countdown Box */
+    .countdown {
+      width: 85%;
+      padding: 30px;
+    }
+  
+    /* Heading Styles */
+    .countdown h1 {
+      font-size: 1.8rem;
+    }
+  
+    /* Time Styling */
+    .time {
+      gap: 20px;
+    }
+  
+    .time div {
+      padding: 20px;
+    }
+  
+    .time div span {
+      font-size: 1.75rem;
+    }
+  
+    /* Modal Content */
+    .modal-content {
+      width: 90%;
+      padding: 20px;
+    }
+  
+    .audio-controls {
+      flex-direction: row; /* Keep audio controls side by side */
+      gap: 20px;
+    }
+  
+    .audio-controls button {
+      font-size: 1.4rem;
+      padding: 12px 30px;
+    }
+  }
+  
