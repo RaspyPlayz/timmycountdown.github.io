@@ -1,4 +1,4 @@
-const targetDate = new Date("May 4, 2025 18:50:00").getTime();
+const targetDate = new Date("April 4, 2025 18:50:00").getTime();
 
 
 const countdown = setInterval(() => {
@@ -92,10 +92,28 @@ toggleButton.addEventListener('click', () => {
   if (document.body.classList.contains('light-mode')) {
     toggleButton.textContent = 'Dark Mode';
   } else {
-    toggleButton.textContent = 'Light Mode';
+    toggleButton.textContent = 'Enzo Mode';
   }
 });
 
 
 
 
+console.log("%cIf you’re seeing this, you’re officially gay. Sorry, I don’t make the rules.", "color: #ff69b4; font-size: 16px; font-weight: bold;");
+console.log("%cWelcome to the Console of the Not Like Tim Foundation™.", "color: #00ffff; font-size: 14px;");
+console.log("%cDeep within these lines lies the truth... and probably Timmy’s search history.", "color: #ffffff; font-size: 13px;");
+console.log("%cThere *might* be a secret pre-release somewhere on this site.", "color: #00ff99; font-size: 13px;");
+console.log("%cBut if you're late, all you get is a picture of Timmy eating drywall.", "color: #ff3333; font-size: 13px;");
+console.log("%cReal ones check the console. Timmy checks out mentally.", "color: #ffcc00; font-size: 13px;");
+
+console.log(`
+  ████████╗██╗███╗   ███╗███╗   ███╗██╗   ██╗
+  ╚══██╔══╝██║████╗ ████║████╗ ████║╚██╗ ██╔╝
+     ██║   ██║██╔████╔██║██╔████╔██║ ╚████╔╝ 
+     ██║   ██║██║╚██╔╝██║██║╚██╔╝██║  ╚██╔╝  
+     ██║   ██║██║ ╚═╝ ██║██║ ╚═╝ ██║   ██║   
+     ╚═╝   ╚═╝╚═╝     ╚═╝╚═╝     ╚═╝   ╚═╝   
+                                             
+            T I M M Y   I S   H E R E!
+  `);
+  
